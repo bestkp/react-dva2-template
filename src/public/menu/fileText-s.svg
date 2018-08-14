@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="确认" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-101.000000, -164.000000)">
+            <g id="Group" transform="translate(101.951253, 164.625000)">
+                <g id="Group-11" transform="translate(4.000000, 3.000000)">
+                    <path d="M16,12 L12,12 C10.8954305,12 10,12.8954305 10,14 L10,18 L3,18 C1.34314575,18 2.02906125e-16,16.6568542 0,15 L0,3 C-2.02906125e-16,1.34314575 1.34314575,-5.83819232e-16 3,-8.8817842e-16 L13,0 C14.6568542,-3.04359188e-16 16,1.34314575 16,3 L16,12 Z" id="Combined-Shape" stroke="#9DB5C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle-30" fill="#9DB5C9" x="3" y="4" width="7" height="2" rx="1"></rect>
+                    <path d="M4,8 L11,8 C11.5522847,8 12,8.44771525 12,9 L12,9 C12,9.55228475 11.5522847,10 11,10 L4,10 C3.44771525,10 3,9.55228475 3,9 L3,9 C3,8.44771525 3.44771525,8 4,8 Z" id="Rectangle-30" fill="#9DB5C9"></path>
+                    <path d="M8.90720846,14.0633664 C8.35492371,14.0633664 7.90720846,14.5110816 7.90720846,15.0633664 C7.90720846,15.6156511 8.35492371,16.0633664 8.90720846,16.0633664 L17.2096987,16.0633664 C17.7619835,16.0633664 18.2096987,15.6156511 18.2096987,15.0633664 C18.2096987,14.5110816 17.7619835,14.0633664 17.2096987,14.0633664 L8.90720846,14.0633664 Z" id="Rectangle-17" fill="#9DB5C9" transform="translate(13.058454, 15.063366) rotate(-45.000000) translate(-13.058454, -15.063366) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+    "name": "CButton",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./CButton.js"
+}

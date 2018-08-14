@@ -1,0 +1,20 @@
+.CountTextArea {
+	position: relative;
+	display: inline-block;
+	.count {
+		position: absolute;
+		right: 12px;
+		bottom: 12px;
+		color: #989898;
+		line-height: 1;
+	}
+	:global {
+		textarea.ant-input {
+			resize: none;
+			background: #F5F8FA;
+			min-height: 140px;
+			border-radius:4px;
+			padding: 12px;
+		}
+	}
+}

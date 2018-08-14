@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="确认" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="图标" transform="translate(-159.000000, -164.000000)" stroke="#9DB5C9" stroke-width="2">
+            <g id="Group-3-Copy-2" transform="translate(159.057427, 164.625000)">
+                <g id="Group" transform="translate(3.500000, 3.500000)">
+                    <path d="M2.27872889,0 L7,0 L7,7 L0,7 L-4.4408921e-16,2.27872889 C-5.98211893e-16,1.02022168 1.02022168,2.31184025e-16 2.27872889,0 Z" id="Rectangle-2"></path>
+                    <path d="M12.2787289,0 L17,0 L17,7 L10,7 L10,2.27872889 C10,1.02022168 11.0202217,2.31184025e-16 12.2787289,0 Z" id="Rectangle-2" transform="translate(13.500000, 3.500000) scale(-1, 1) translate(-13.500000, -3.500000) "></path>
+                    <path d="M2.27872889,10 L7,10 L7,17 L0,17 L-4.4408921e-16,12.2787289 C-5.98211893e-16,11.0202217 1.02022168,10 2.27872889,10 Z" id="Rectangle-2" transform="translate(3.500000, 13.500000) scale(1, -1) translate(-3.500000, -13.500000) "></path>
+                    <path d="M12.2787289,10 L17,10 L17,17 L10,17 L10,12.2787289 C10,11.0202217 11.0202217,10 12.2787289,10 Z" id="Rectangle-2" transform="translate(13.500000, 13.500000) scale(-1, -1) translate(-13.500000, -13.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

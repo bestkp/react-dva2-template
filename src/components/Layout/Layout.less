@@ -1,0 +1,264 @@
+@import "~themes/vars";
+
+.layout {
+    position: relative;
+    height: 100vh;
+
+    &.withnavbar {
+        .main {
+            margin-left: 0;
+        }
+    }
+
+    &.fold {
+        .sider {
+            width: 42px;
+
+            .logo {
+                img {
+                    width: 28px;
+                    margin: 6px 7px;
+                }
+            }
+
+            :global {
+                .ant-menu-root {
+                    width: 100%;
+                    overflow: hidden;
+
+                    & > .ant-menu-item {
+                        padding: 0;
+                        text-align: center;
+
+                        .anticon {
+                            font-size: 14px;
+                            margin-right: 0;
+                        }
+                    }
+
+                    & > .ant-menu-submenu {
+                        & > .ant-menu-submenu-title {
+                            padding: 0;
+                            text-align: center;
+
+                            .anticon {
+                                font-size: 14px;
+                                margin-right: 0;
+                            }
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main {
+            margin-left: 42px;
+        }
+    }
+
+    .sider {
+        width: 240px;
+        background: #fff;
+        position: absolute;
+        overflow: hidden;
+        height: 100vh;
+        //transition: @transition-ease-out;
+        box-shadow: @shadow-1;
+        color: #999;
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            cursor: pointer;
+            //transition: @transition-ease-out;
+            overflow: hidden;
+
+            img {
+                width: 40px;
+                margin-right: 8px;
+                //transition: @transition-ease-out;
+            }
+
+            span {
+                vertical-align: text-bottom;
+                font-size: 16px;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+
+            .anticon {
+                //transition: @transition-ease-out;
+            }
+        }
+        .logoTitle{
+            font-family: PingFangSC-Semibold;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        :global {
+            .ant-menu-dark,
+            .ant-menu-dark .ant-menu-sub {
+                color: #999;
+            }
+
+            .ant-menu-root {
+                height: 100vh;
+                overflow-x: hidden;
+                border-right: none;
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                }
+
+                &:hover {
+                    &::-webkit-scrollbar-thumb {
+                        background-color: rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+                &.ant-menu-vertical {
+                    .ant-menu-sub {
+                        height: 0;
+                        opacity: 0;
+                        //transition: none;
+                    }
+
+                    .ant-menu-submenu-active {
+                        .ant-menu-sub {
+                            height: auto;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .ant-menu {
+                //transition: @transition-ease-out;
+
+                .ant-menu-item,
+                .ant-menu-submenu-title {
+                    overflow: hidden;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+
+    .main {
+        margin-left: 240px;
+        height: 100vh;
+	    padding: 40px;
+	    overflow: auto;
+
+        :global {
+            .content-inner {
+                background: #fff;
+                padding: 16px;
+                box-shadow: @shadow-1;
+                min-height: e("calc(100vh - 134px)");
+            }
+        }
+
+        .container {
+            border-radius: 6px;
+           min-height: e("calc(100vh - 84px)");
+        }
+
+        .content {
+            min-height: e("calc(100vh - 134px)");
+            position: relative;
+        }
+    }
+}
+
+:global .ant-menu-dark {
+    color: #999;
+    background-color: #3e3e3e;
+
+    .ant-menu-submenu-title:hover,
+    .ant-menu-submenu:hover {
+        color: @primary-color;
+    }
+
+    .ant-menu-sub {
+        color: #999;
+    }
+
+    .ant-menu-submenu-selected {
+        color: @primary-color;
+
+        &:not(.ant-menu-submenu-open) {
+            background-color: @dark-half;
+        }
+    }
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+        & > a {
+            color: #999;
+        }
+
+        &:hover > a {
+            color: @primary-color;
+        }
+    }
+
+    &.ant-menu-inline {
+        .ant-menu-item-selected {
+            background-color: @dark-half;
+        }
+    }
+
+    .ant-menu-item-selected {
+        color: @primary-color;
+
+        &.ant-menu-item {
+            background: @dark-half;
+        }
+
+        & > a {
+            color: @primary-color;
+        }
+
+        &:hover {
+            background-color: @dark-half;
+        }
+    }
+}
+
+.spin {
+    :global .ant-spin-container {
+        height: 100vh;
+    }
+}
+@media (max-width: 767px) {
+    .layout {
+        .main {
+            .container {
+                margin: 12px;
+            }
+
+            .bread {
+                padding: 0 12px;
+            }
+
+            .content {
+                min-height: e("calc(100vh - 160px)");
+            }
+
+            :global {
+                .content-inner {
+                    padding: 12px;
+                    min-height: e("calc(100vh - 160px)");
+                }
+            }
+        }
+    }
+}

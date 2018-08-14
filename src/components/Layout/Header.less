@@ -1,0 +1,27 @@
+@import "~themes/vars";
+
+.header {
+    box-shadow: @shadow-2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #363942;
+    z-index: 999;
+    cursor: pointer;
+
+    .rightWarpper {
+        display: flex;
+        padding: 0 16px;
+        margin-right: 20px;
+        background: #363942;
+        height: 60px;
+        line-height: 60px;
+        color: #fff;
+
+        &:hover {
+            background-color: #434754;
+            border-bottom: 2px solid @primary-color;
+        }
+    }
+}

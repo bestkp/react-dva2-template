@@ -1,0 +1,103 @@
+.modal,
+.mask {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal {
+	position: fixed;
+}
+.mask {
+	position: absolute;
+	background: rgba(0, 0, 0, .3);
+}
+
+.modalDialog {
+	z-index: 1001;
+	text-align: center;
+	box-shadow:0px 1px 13px 0px rgba(0,79,143,0.1);
+	border-radius:10px;
+	padding: 40px;
+	background: #fff;
+	margin: 0 auto;
+	&.modalslideUpenter {
+		animation: modalslideUpenter .3s both cubic-bezier(0.4, 0, 0, 1.5);
+	}
+	&.modalslideUpleave {
+		animation: modalslideUpleave .3s both;
+	}
+	.modalClose {
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		color: #666;
+		&:hover {
+			color: #333;
+		}
+		&:after {
+			content: "\E633";
+			display: block;
+			font-family: anticon!important;
+			line-height: 50px;
+		}
+	}
+	.modalHeader {
+		padding-bottom: 30px;
+		font-family:PingFangSC-Medium;
+		font-size: 20px;
+	}
+	.modalBody {
+		margin-bottom: 40px;
+	}
+	.footer {
+		text-align: right;
+		padding-right: 40px;
+	}
+}
+/* -- fade -- */
+
+@keyframes modalfadeenter {
+	from {
+		opacity: 0;
+	}
+}
+
+.modalfadeenter {
+	animation: modalfadeenter .3s both ease-in;
+}
+
+
+@keyframes modalfadeleave {
+	to {
+		opacity: 0
+	}
+}
+
+.modalfadeleave {
+	animation: modalfadeleave .3s both ease-out;
+}
+
+/* -- slideUp -- */
+
+@keyframes modalslideUpenter {
+	from {
+		transform: translateY(10%);
+	}
+}
+
+@keyframes modalslideUpleave {
+	to {
+		transform: translateY(10%);
+		opacity: 0;
+	}
+}
+

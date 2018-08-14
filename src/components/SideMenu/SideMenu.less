@@ -1,0 +1,84 @@
+@cb: cubic-bezier(0.57, 1.4, 0.95, 0.94);
+.sideMenu {
+	padding-left: 40px;
+	padding-top: 50px;
+	.menu {
+		list-style: none;
+		padding: 0;
+		.menuLi {
+			background: transparent;
+			height: 66px;
+			line-height: 66px;
+			cursor: pointer;
+			position: relative;
+			margin-bottom: 12px;
+			&:after {
+				content: '';
+				display: block;
+				width: 160px;
+				height: 66px;
+				border-radius: 80px;
+				z-index: 1;
+				transform: translateX(40px);
+				transition: all .2s @cb;
+			}
+			.item {
+				display: inline-block;
+				color: #7DA1B3;
+				border-radius: 80px;
+				height: 66px;
+				position: absolute;
+				width: 100%;
+				z-index: 5;
+				transition: color 0s;
+				.icon {
+					display: inline-block;
+					vertical-align: middle;
+					width: 24px;
+					height: 24px;
+					margin-right: 8px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					margin-top: -3px;
+				}
+				.fileText {
+					background-image: url("../../public/menu/fileText-s.svg");
+				}
+				.appstore {
+					background-image: url("../../public/menu/appstore-s.svg");
+				}
+				.dataShow {
+					background-image: url("../../public/menu/dataShow-s.svg");
+				}
+			}
+			&:hover {
+				.item {
+					color: #289FFF;
+				}
+			}
+			&.selected {
+				.item {
+					color: #fff;
+					//background: #289FFF;
+					text-align: center;
+					width: 160px;
+					.fileText {
+						background-image: url("../../public/menu/fileText.svg");
+					}
+					.appstore {
+						background-image: url("../../public/menu/appstore.svg");
+					}
+					.dataShow {
+						background-image: url("../../public/menu/dataShow.svg");
+					}
+				}
+				&:after {
+					background: #289FFF;
+					right: 40px;
+					transform: translateX(0);
+					box-shadow:0px 4px 10px 0px rgba(0,106,191,0.18);
+				}
+			}
+		}
+	}
+}
